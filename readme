@@ -1,0 +1,22 @@
+CIS 552 Project
+
+Junyi Li (ljunyi)
+Chenhui Zhai (chenhuiz)
+
+Basic usage:
+-- Input: an article text file, a dependency parsed file of the same article
+-- Output: word visualization based on word weights and word relationship
+
+File description (in the order that they should be read):
+-- Main.hs: the main program
+-- WordProcess.hs: module that converts the raw article and word dependencies
+   to be ready for drawing.
+-- Animation.hs: module that generate the nodes and edges that represent the 
+   words and their relationships
+-- Stopwords.hs: module contains uninformative English words that are high frequency but should not be included in the graph.
+   We used NLTK's stopwords as a bases and added our own ones.
+Additional Libraries and tools:
+-- We need the Stanford Dependency Parser, which is available on Eniac,
+   but only in Python, so that is why we need a parsed file.
+-- NLP.tokenize library splits an article into individual words.
+-- Gloss library makes the visualizations possible.
